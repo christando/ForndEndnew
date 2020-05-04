@@ -58,7 +58,7 @@ return function (App $app) {
         $stmt = $this->db->prepare($sql);
     
         $data = [
-            ":product_id" => $new_buah["product_id"],
+            ":product_id" => uniqid(),
             ":name" => $new_buah["name"],
             ":price" => $new_buah["price"],
             ":image" => $new_buah["image"],
