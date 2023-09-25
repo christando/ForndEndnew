@@ -1,0 +1,36 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<button class="btn btn-primary" @onclick="IncrementReset">Reset</button>
+
+<ul>
+    @for (int i = 1; i <= currentCount; i++)
+    {
+        <li>@i</li>
+    }
+</ul>
+
+@code {
+    private int currentCount = 0;
+    private int reset = 0;
+
+    [Parameter]
+    public int IncrementAmount{get;set;} = 1;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+     private void IncrementReset()
+    {
+        currentCount = reset;
+    }
+}
