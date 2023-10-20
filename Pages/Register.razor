@@ -8,36 +8,36 @@
 
 <h1>Register</h1>
 <div class="card-header">
-    <EditForm Model="@register" OnValidSubmit="@HandleValidSubmit">
+    <EditForm Model="@register" OnValidSubmit="@AddRegis">
         <DataAnnotationsValidator />
         <ValidationSummary />
         <div class="card-body">
             <div class="form-container">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <InputText id="username" name="username" class="form-control" @bind-Value="register.Username" />
-                    <ValidationMessage For="() => register.Username" />
+                    <InputText id="username" name="username" class="form-control" @bind-Value="register.username" />
+                    <ValidationMessage For="() => register.username" />
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
                     <InputText id="password" name="password" class="form-control" type="password"
-                        @bind-Value="register.Password" />
-                    <ValidationMessage For="() => register.Password" />
+                        @bind-Value="register.password" />
+                    <ValidationMessage For="() => register.password" />
                 </div>
                 <div class="form-group">
                     <label for="telp">No Telp:</label>
-                    <InputText id="telp" name="telp" class="form-control" @bind-Value="register.NoTelp" />
-                    <ValidationMessage For="() => register.NoTelp" />
+                    <InputText id="telp" name="telp" class="form-control" @bind-Value="register.notelp" />
+                    <ValidationMessage For="() => register.notelp" />
                 </div>
-                <div class="form-group">
-                    <label for="loginas">Register As</label>
-                    <InputSelect id="loginas" name="loginas" class="form-control" style="width: 100%;"
-                        @bind-Value="register.RegisterAs">
+                @* <div class="form-group">
+                    <label for="registeras">Register As</label>
+                    <InputSelect id="registeras" name="registeras" class="form-control" style="width: 100%;"
+                        @bind-Value="register.registeras">
                         <option value="Pengguna Rumahan">Pengguna Rumahan</option>
                         <option value="Pengambil Sampah">Pengambil Sampah</option>
                         <option value="Bank Sampah">Bank Sampah</option>
                     </InputSelect>
-                </div>
+                </div> *@
                 <br>
                 <button type="submit" class="btn btn-primary">Register</button>
                 <div class="divider">OR</div>
@@ -48,31 +48,36 @@
 </div>
 
 @code {
-    private RegisterModel register = new RegisterModel();
+    private Regis register = new();
     private void HandleValidSubmit()
     {
 
+    }
+
+    public async Task AddRegis(){
+        await Http.PostAsJsonAsync("http://localhost/Slims3/api/fe/regis", register);
     }
 
     private void login()
     {
         Navigation.NavigateTo("/");
     }
-    public class RegisterModel
+
+    public class Regis
     {
-        [Required(ErrorMessage = "Username is required.")]
-        public string? Username { get; set; }
+        [Required(ErrorMessage = "Username Belum Diisi")]
+        public string? username{get;set;}
+        
+        @* [Required(ErrorMessage ="Password Belum diisi atau Salah")] *@
+        public string? password{get;set;}
+        
+        [Required(ErrorMessage = "nomor telpon belum diisi")]
+        public string? notelp{get;set;}
 
-        [Required(ErrorMessage = "Password is required.")]
-        [DataType(DataType.Password)]
-        public string? Password { get; set; }
-
-        [Required(ErrorMessage = "Nomor Telepon is required.")]
-        [RegularExpression(@"^\d{10,15}$", ErrorMessage = "Nomor Telepon must be a valid number with 10-15 digits.")]
-        public string? NoTelp { get; set; }
-
-        [Required(ErrorMessage = "Register As is required.")]
-        public string? RegisterAs { get; set; }
+        @* [Required(ErrorMessage = "pilih akun login anda sebagai")]
+        public string? registeras{get;set;} *@
     }
-
 }
+    
+
+

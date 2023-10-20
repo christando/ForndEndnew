@@ -57,4 +57,6 @@
         [DataType(DataType.Password)]
         public string? Password { get; set; }
     }
+    @* protected override async Task OnInitializedAsync() =>
+    login = await Http.GetFromJsonAsync<LoginModel[]>("/api/loginItems"); *@
 }
