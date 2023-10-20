@@ -55,7 +55,7 @@
     }
 
     public async Task AddRegis(){
-        await Http.PostAsJsonAsync("http://localhost/Slims3/api/fe/regis", register);
+        await Http.PostAsJsonAsync("http://localhost/Slims3/public/api/fe/regis", register);
     }
 
     private void login()
@@ -77,6 +77,8 @@
         @* [Required(ErrorMessage = "pilih akun login anda sebagai")]
         public string? registeras{get;set;} *@
     }
+    
+    
 }
     
 

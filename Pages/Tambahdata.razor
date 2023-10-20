@@ -1,0 +1,56 @@
+@page "/banksampah"
+@inject NavigationManager Navigation
+@using System.ComponentModel.DataAnnotations
+@using System.Net.Http
+@inject HttpClient Http
+@using System.Net.Http.Json
+
+<H1>Bank Sampah</H1>
+<div class="card mt-4">
+    <div class="card-header">
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/student/formadd" class="btn btn-primary" role="button"><i class="bi bi-plus-square"></i> Student</a>
+        </div>
+        <div class="col-md-6">
+            <form action="/student/search" method="GET" class="form-inline my-2 my-lg-0">
+                <input name="q" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-intline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">#</th>
+                    <th scope="col">#</th>
+                    <th scope="col">#</th>
+                    <th scope="col">#</th>
+                    <th scope="col">#</th>
+                    <th scope="col">#</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="/student/formedit/{{$m->id}}" class="btn btn-success"><i class="bi bi-pencil-square"></i></a>
+                        <a href="/student/delete/{{$m->id}}" class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <span class='float-right'></span>
+    </div>
+</div>

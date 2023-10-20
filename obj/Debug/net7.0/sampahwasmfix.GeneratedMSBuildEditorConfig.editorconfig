@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/tugas kuliah/Semester 5/Frontend/sampahwasmfix/Pages/Tambahdata.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFtYmFoZGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/tugas kuliah/Semester 5/Frontend/sampahwasmfix/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
