@@ -826,3 +826,12 @@ D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\obj\Debug\net7.0\sampahwasmfix
 D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\obj\Debug\net7.0\refint\sampahwasmfix.dll
 D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\obj\Debug\net7.0\sampahwasmfix.pdb
 D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\obj\Debug\net7.0\ref\sampahwasmfix.dll
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\bin\Debug\net7.0\wwwroot\_framework\ComponentLibrary.dll
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\bin\Debug\net7.0\wwwroot\_framework\ComponentLibrary.pdb
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\bin\Debug\net7.0\wwwroot\_framework\ComponentLibrary.pdb.gz
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\bin\Debug\net7.0\wwwroot\_framework\ComponentLibrary.dll.gz
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\bin\Debug\net7.0\ComponentLibrary.staticwebassets.runtime.json
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\bin\Debug\net7.0\ComponentLibrary.dll
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\bin\Debug\net7.0\ComponentLibrary.pdb
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\obj\Debug\net7.0\build-gz\hUz6LHpA.gz
+D:\tugas kuliah\Semester 5\Frontend\sampahwasmfix\obj\Debug\net7.0\build-gz\9FZgtfhZ.gz

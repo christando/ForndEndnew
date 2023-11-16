@@ -4,6 +4,65 @@
     "D:\\tugas kuliah\\Semester 5\\Frontend\\sampahwasmfix\\sampahwasmfix.csproj": {}
   },
   "projects": {
+    "D:\\tugas kuliah\\Semester 5\\Frontend\\ComponentLibrary\\ComponentLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\tugas kuliah\\Semester 5\\Frontend\\ComponentLibrary\\ComponentLibrary.csproj",
+        "projectName": "ComponentLibrary",
+        "projectPath": "D:\\tugas kuliah\\Semester 5\\Frontend\\ComponentLibrary\\ComponentLibrary.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\tugas kuliah\\Semester 5\\Frontend\\ComponentLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\tugas kuliah\\Semester 5\\Frontend\\sampahwasmfix\\sampahwasmfix.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +84,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\tugas kuliah\\Semester 5\\Frontend\\ComponentLibrary\\ComponentLibrary.csproj": {
+                "projectPath": "D:\\tugas kuliah\\Semester 5\\Frontend\\ComponentLibrary\\ComponentLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

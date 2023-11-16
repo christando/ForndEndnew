@@ -198,13 +198,15 @@
       "mscorlib.dll": "sha256-kgowZLZGyceaJo4bHvVY1kmm1GJuawa5rPO1RCfNYWc=",
       "netstandard.dll": "sha256-2\/SuexPFW8hizUgbgPcchYHfG\/zmGzzMN6ESSyefPRQ=",
       "System.Private.CoreLib.dll": "sha256-mcywrbK0VZXiOvZ4dxU1ocaPZFplCRSIPQ\/wFikcrus=",
-      "sampahwasmfix.dll": "sha256-ck1JECmY5Mccb1Y2gMUoq8p0UIqk+AQyFkHgS2lmYzY="
+      "ComponentLibrary.dll": "sha256-rUaNSJ+zBbUt+TBahRAwSGgkhjqUa3o9QjNKdZWu++c=",
+      "sampahwasmfix.dll": "sha256-bw+N4PXjkypXwFx1ZiFv4w5HhSfVfS75WqPGDUYNUZY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "sampahwasmfix.pdb": "sha256-C4+6DJg6wkLi0hbQfeDlnTth1fQgB102Q+EW6YDuq2M="
+      "ComponentLibrary.pdb": "sha256-w3JO0YnflvBFGsh+ZUIlPJ4CUQWvrrZ8W8YogtCDDB0=",
+      "sampahwasmfix.pdb": "sha256-NCCPs23TIn8kz+aKnAs7C6Jj2tOZyKdUKG5RGnW94r0="
     },
     "runtime": {
       "dotnet.7.0.3.xryactapp5.js": "sha256-DxGvmbtUa6hGJpk3VyMEbkPZ653qWbQkh8X4ZVM9TWM=",
